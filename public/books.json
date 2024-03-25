@@ -1,0 +1,81 @@
+[
+    {
+      "bookId": 1,
+      "bookName": "The Silent Patient",
+      "author": "Alex Michaelides",
+      "image": "https://images.pexels.com/photos/2228582/pexels-photo-2228582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "review": "A gripping psychological thriller that keeps you guessing until the end.",
+      "totalPages": 336,
+      "rating": 4.5,
+      "category": "Mystery",
+      "tags": ["Suspense", "Psychological"],
+      "publisher": "Celadon Books",
+      "yearOfPublishing": 2019
+    },
+    {
+      "bookId": 2,
+      "bookName": "Gone Girl",
+      "author": "Gillian Flynn",
+      "image": "https://images.pexels.com/photos/2228586/pexels-photo-2228586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "review": "A twisted tale of love, deception, and psychological suspense.",
+      "totalPages": 432,
+      "rating": 4.2,
+      "category": "Thriller",
+      "tags": ["Mystery", "Psychological"],
+      "publisher": "Crown Publishing Group",
+      "yearOfPublishing": 2012
+    },
+    {
+      "bookId": 3,
+      "bookName": "The Girl on the Train",
+      "author": "Paula Hawkins",
+      "image": "https://images.pexels.com/photos/4238505/pexels-photo-4238505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "review": "A compelling psychological thriller with unexpected twists.",
+      "totalPages": 336,
+      "rating": 4.1,
+      "category": "Mystery",
+      "tags": ["Suspense", "Psychological"],
+      "publisher": "Riverhead Books",
+      "yearOfPublishing": 2015
+    },
+    {
+      "bookId": 4,
+      "bookName": "Sharp Objects",
+      "author": "Gillian Flynn",
+      "image": "https://images.pexels.com/photos/3847646/pexels-photo-3847646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "review": "A dark and haunting psychological thriller that leaves a lasting impression.",
+      "totalPages": 254,
+      "rating": 4.0,
+      "category": "Mystery",
+      "tags": ["Thriller", "Psychological"],
+      "publisher": "Crown Publishing Group",
+      "yearOfPublishing": 2006
+    },
+    {
+      "bookId": 5,
+      "bookName": "Before I Go to Sleep",
+      "author": "S.J. Watson",
+      "image": "https://images.pexels.com/photos/4769488/pexels-photo-4769488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "review": "A gripping psychological mystery that will keep you on the edge of your seat.",
+      "totalPages": 368,
+      "rating": 4.3,
+      "category": "Thriller",
+      "tags": ["Suspense", "Psychological"],
+      "publisher": "HarperCollins",
+      "yearOfPublishing": 2011
+    },
+    {
+      "bookId": 6,
+      "bookName": "The Girl with the Dragon Tattoo",
+      "author": "Stieg Larsson",
+      "image": "https://images.pexels.com/photos/6475045/pexels-photo-6475045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "review": "An intense and captivating psychological thriller with complex characters.",
+      "totalPages": 672,
+      "rating": 4.4,
+      "category": "Mystery",
+      "tags": ["Suspense", "Psychological"],
+      "publisher": "Knopf",
+      "yearOfPublishing": 2005
+    }
+  ]
+  
