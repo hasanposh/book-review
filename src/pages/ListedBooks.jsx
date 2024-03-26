@@ -10,21 +10,23 @@ const ListedBooks = () => {
         <p className="text-3xl font-bold">Books</p>
       </div>
       {/* Dropdown btn */}
-      <details className="dropdown">
-        <summary className="m-1 btn">open or close</summary>
+      <div className="flex justify-center my-10 ">
+      <details className="dropdown ">
+        <summary className="m-1 bg-[#23BE0A] text-white btn">Sort By <IoIosArrowDown/> </summary>
         <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
           
           <li>
-            <a>Item 2</a>
+            <a>Rating</a>
           </li>
           <li>
-            <a>Item 2</a>
+            <a>Number Of Pages</a>
           </li>
           <li>
-            <a>Item 2</a>
+            <a>Publisher year</a>
           </li>
         </ul>
       </details>
+      </div>
 
       {/* tab slider */}
       <div role="tablist" className="tabs w-1/3  tabs-lifted">
