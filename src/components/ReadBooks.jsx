@@ -7,11 +7,13 @@ import { Link } from "react-router-dom";
 
 
 const ReadBooks = () => {
+  // console.log(handleSortedBooksByRating);
   const [readBooks, setReadBooks] = useState([]);
   useEffect(() => {
     const storedBooks = getReadBooks();
     setReadBooks(storedBooks);
   }, []);
+  
 
   return (
     <div className="my-8 space-y-8">
