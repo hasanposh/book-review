@@ -6,34 +6,30 @@ const ListedBooks = () => {
   const [tabIndex, setTabIndex] = useState(1);
   return (
     <div>
-      <div className="mb-10 bg-[#f3f3f3] flex items-center justify-center rounded-xl h-24">
+      <div className=" bg-[#f3f3f3] flex items-center justify-center rounded-xl h-24">
         <p className="text-3xl font-bold">Books</p>
       </div>
       {/* Dropdown btn */}
-      <div className="dropdown flex items-center mb-10 justify-center ">
-        <div tabIndex={0} role="button" className="btn text-white w-32 bg-[#23BE0A] m-1">
-        Sort By <IoIosArrowDown />
-        </div>
-        <ul
-          tabIndex={0}
-          className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
-        >
+      <details className="dropdown">
+        <summary className="m-1 btn">open or close</summary>
+        <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+          
           <li>
-            <a>Rating</a>
+            <a>Item 2</a>
           </li>
           <li>
-            <a>Number of Pages</a>
+            <a>Item 2</a>
           </li>
           <li>
-            <a>Publisher Year</a>
+            <a>Item 2</a>
           </li>
         </ul>
-      </div>
+      </details>
 
       {/* tab slider */}
       <div role="tablist" className="tabs w-1/3  tabs-lifted">
         <Link
-        to={'readbooks'}
+          to={""}
           onClick={() => setTabIndex(1)}
           role="tab"
           className={`tab ${tabIndex === 1 ? "tab-active font-medium" : ""}`}
@@ -41,7 +37,7 @@ const ListedBooks = () => {
           Read Books
         </Link>
         <Link
-        to={'wishlistbooks'}
+          to={"wishlistbooks"}
           onClick={() => setTabIndex(2)}
           className={`tab ${tabIndex === 2 ? "tab-active font-medium" : ""}`}
           role="tab"
@@ -49,7 +45,7 @@ const ListedBooks = () => {
           Wishlist Books
         </Link>
       </div>
-      <Outlet/>
+      <Outlet />
     </div>
   );
 };

@@ -10,6 +10,8 @@ import PagesToRead from "./pages/PagesToRead.jsx";
 import BookDetails from "./components/BookDetails.jsx";
 import ReadBooks from "./components/ReadBooks.jsx";
 import WishListBooks from "./components/WishListBooks.jsx";
+import  { Toaster } from 'react-hot-toast';
+
 
 const router = createBrowserRouter([
   {
@@ -27,8 +29,10 @@ const router = createBrowserRouter([
         element: <ListedBooks />,
         children: [
           {
-            path: "readbooks",
+            index: true,
+            // path: "readbooks/",
             element: <ReadBooks />,
+            loader: () => fetch("../public/books.json"),
           },
           {
             path: "wishlistbooks",
@@ -54,5 +58,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <Toaster />
   </React.StrictMode>
 );
