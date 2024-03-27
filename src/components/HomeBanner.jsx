@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import bannerBook from "../assets/book.jpeg"
 
 const HomeBanner = () => {
   return (
@@ -16,7 +17,7 @@ const HomeBanner = () => {
         </Link>
       </div>
       <div>
-        <img src="src\assets\book.jpeg" alt="" />
+        <img src={bannerBook} alt="" />
       </div>
     </div>
   );

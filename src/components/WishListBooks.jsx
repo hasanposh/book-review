@@ -1,16 +1,12 @@
-import { useEffect, useState } from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import { GoPeople } from "react-icons/go";
 import { BiBookBookmark } from "react-icons/bi";
-import { Link } from "react-router-dom";
-import { getWishListBooks } from "../utility/wishListBooks";
+import { Link, useOutletContext } from "react-router-dom";
 
 const WishListBooks = () => {
-  const [wishListBooks, setWishListBooks] = useState([]);
-  useEffect(() => {
-    const storedBooks = getWishListBooks();
-    setWishListBooks(storedBooks);
-  }, []);
+  //eslint-disable-next-line
+  const [_,wishListBooks] = useOutletContext()
+ 
   return (
     <div className="my-8 space-y-8">
       {wishListBooks.map((wishListBook) => (
@@ -32,7 +28,7 @@ const WishListBooks = () => {
               {wishListBook.bookName}
             </h2>
             <p className="font-semibold">By : {wishListBook.author}</p>
-            <div className="flex gap-3 items-center">
+            <div className="flex flex-col gap-3 items-center">
               <p className="font-bold">Tag </p>
               <div className="flex gap-3">
                 {wishListBook.tags.map((tag, indx) => (

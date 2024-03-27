@@ -2,21 +2,31 @@ import { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 import { getReadBooks } from "../utility/localStorage";
-
+import { getWishListBooks } from "../utility/wishListBooks";
 
 const ListedBooks = () => {
   const [tabIndex, setTabIndex] = useState(1);
   const [readBooks, setReadBooks] = useState([]);
+  const [wishListBooks, setWishListBooks] = useState([]);
   useEffect(() => {
-    const storedBooks = getReadBooks();
-    setReadBooks(storedBooks);
-  }, [])
-  const handleSortedBooksByRating = () => {
     const storedReadBooks = getReadBooks();
-    const sortedStoredBooks=storedReadBooks.sort((a,b)=>parseFloat(a.rating)-parseFloat(b.rating))
-    setReadBooks(sortedStoredBooks)
-    // setReadBooks(prevState=>[...prevState].sort((a,b)=>a.rating-b.rating))
+    const storedWishListBooks = getWishListBooks();
+    setReadBooks(storedReadBooks);
+    setWishListBooks(storedWishListBooks);
+  }, []);
+  
+  const handleSortedBooks = (property) => {
+    // const storedReadBooks = getReadBooks();
+    // const storedWishListBooks = getWishListBooks();
+    // const sortedStoredBooks = storedReadBooks.sort(
+    //   (a, b) => parseFloat(b[property]) - parseFloat(a[property])
+    // );
+    // setReadBooks(sortedStoredBooks);
+    setReadBooks(prevState=>[...prevState].sort((a,b)=>a[property]-b[property]))
+    setWishListBooks(prevState=>[...prevState].sort((a,b)=>a[property]-b[property]))
+
   };
+
   return (
     <div>
       <div className=" bg-[#f3f3f3] flex items-center justify-center rounded-xl h-24">
@@ -30,13 +40,13 @@ const ListedBooks = () => {
           </summary>
           <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
             <li>
-              <span onClick={handleSortedBooksByRating}>Rating</span>
+              <span onClick={()=>handleSortedBooks('rating')}>Rating</span>
             </li>
             <li>
-              <a>Number Of Pages</a>
+              <span onClick={()=>handleSortedBooks('totalPages')}>Number Of Pages</span>
             </li>
             <li>
-              <a>Publisher year</a>
+              <span onClick={()=>handleSortedBooks('yearOfPublishing')}>Publisher year</span>
             </li>
           </ul>
         </details>
@@ -61,7 +71,7 @@ const ListedBooks = () => {
           Wishlist Books
         </Link>
       </div>
-      <Outlet context={[readBooks]}  />
+      <Outlet context={[readBooks, wishListBooks]} />
     </div>
   );
 };

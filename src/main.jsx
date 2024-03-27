@@ -10,19 +10,19 @@ import PagesToRead from "./pages/PagesToRead.jsx";
 import BookDetails from "./components/BookDetails.jsx";
 import ReadBooks from "./components/ReadBooks.jsx";
 import WishListBooks from "./components/WishListBooks.jsx";
-import  { Toaster } from 'react-hot-toast';
-
+import { Toaster } from "react-hot-toast";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
+    exact: true,
     children: [
       {
-        path: "/",
+        index: true,
         element: <Home />,
-        loader: () => fetch("../public/books.json"),
+        loader: () => fetch("/books.json"),
       },
       {
         path: "/listedbooks",
@@ -31,14 +31,14 @@ const router = createBrowserRouter([
           {
             index: true,
             // path: "readbooks/",
-            element: <ReadBooks  />,
-            loader: () => fetch("../public/books.json"),
+            element: <ReadBooks />,
+            loader: () => fetch("/books.json"),
           },
           {
             path: "wishlistbooks",
             element: <WishListBooks />,
           },
-        ]
+        ],
       },
 
       {
@@ -48,8 +48,7 @@ const router = createBrowserRouter([
       {
         path: "/bookdetails/:id",
         element: <BookDetails />,
-        loader: () => fetch("../public/books.json"),
-        
+        loader: () => fetch("/books.json"),
       },
     ],
   },

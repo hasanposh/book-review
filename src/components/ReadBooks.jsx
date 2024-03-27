@@ -6,17 +6,9 @@ import { Link,useOutletContext } from "react-router-dom";
 
 
 const ReadBooks = () => {
-  const [readBooks] = useOutletContext()
-  // console.log(('2'),readBooks)
-
-  // console.log(handleSortedBooksByRating);
-  // const [readBooks, setReadBooks] = useState([]);
-  // useEffect(() => {
-  //   const storedBooks = getReadBooks();
-  //   setReadBooks(storedBooks);
-  // }, []);
-  
-
+  //eslint-disable-next-line
+  const [readBooks,_] = useOutletContext()
+ 
   return (
     <div className="my-8 space-y-8">
       
