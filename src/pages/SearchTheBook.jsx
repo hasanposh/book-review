@@ -29,16 +29,16 @@ const SearchTheBook = () => {
     <div>
       <div className="bg-[#f3f3f3] gap-4 flex flex-col items-center justify-center rounded-xl p-14">
         <p className="text-3xl font-bold">Search Your Book</p>
-        <div>
+        <div className="space-y-5 text-center">
           <input
             type="text"
-            placeholder="Type here"
+            placeholder="Search Your Book"
             className="input input-bordered w-96"
             value={searchName}
             onChange={handleChange}
           />
           <button
-            className="btn w-36 ml-4 text-base text-white bg-[#23BE0A]"
+            className="btn w-36 lg:ml-4 text-base text-white bg-[#23BE0A]"
             onClick={handleSearch}
           >
             Search

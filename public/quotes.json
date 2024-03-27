@@ -1,0 +1,142 @@
+[
+    {
+      "id": 1,
+      "bookName": "To Kill a Mockingbird",
+      "quotes": [
+        "You never really understand a person until you consider things from his point of view... Until you climb inside of his skin and walk around in it.",
+        "The one thing that doesn't abide by majority rule is a person's conscience.",
+        "You never really understand a person until you consider things from his point of view.",
+        "People generally see what they look for, and hear what they listen for.",
+        "Atticus, he was real nice."
+      ],
+      "author": "Harper Lee",
+      "image": "https://images.pexels.com/photos/1485657/pexels-photo-1485657.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": "Fiction"
+    },
+    {
+      "id": 2,
+      "bookName": "1984",
+      "quotes": [
+        "Big Brother is Watching You.",
+        "War is peace. Freedom is slavery. Ignorance is strength.",
+        "In the face of pain, there are no heroes.",
+        "Reality exists in the human mind, and nowhere else.",
+        "Freedom is the freedom to say that two plus two make four. If that is granted, all else follows."
+      ],
+      "author": "George Orwell",
+      "image": "https://images.pexels.com/photos/2255441/pexels-photo-2255441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": "Dystopian Fiction"
+    },
+    {
+      "id": 3,
+      "bookName": "The Great Gatsby",
+      "quotes": [
+        "So we beat on, boats against the current, borne back ceaselessly into the past.",
+        "I hope she'll be a fool -- that's the best thing a girl can be in this world, a beautiful little fool.",
+        "Can't repeat the past?...Why of course you can!",
+        "I was within and without, simultaneously enchanted and repelled by the inexhaustible variety of life.",
+        "Gatsby believed in the green light, the orgastic future that year by year recedes before us."
+      ],
+      "author": "F. Scott Fitzgerald",
+      "image": "https://images.pexels.com/photos/2821823/pexels-photo-2821823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": "Classic Literature"
+    },
+    {
+      "id": 4,
+      "bookName": "Pride and Prejudice",
+      "quotes": [
+        "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
+        "I declare after all there is no enjoyment like reading!",
+        "I am the happiest creature in the world. Perhaps other people have said so before, but not one with such justice.",
+        "You must allow me to tell you how ardently I admire and love you.",
+        "I cannot fix on the hour, or the spot, or the look or the words, which laid the foundation. It is too long ago. I was in the middle before I knew that I had begun."
+      ],
+      "author": "Jane Austen",
+      "image": "https://images.pexels.com/photos/1537875/pexels-photo-1537875.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": "Romantic Fiction"
+    },
+    {
+      "id": 5,
+      "bookName": "The Catcher in the Rye",
+      "quotes": [
+        "What really knocks me out is a book that, when you're all done reading it, you wish the author that wrote it was a terrific friend of yours and you could call him up on the phone whenever you felt like it.",
+        "All morons hate it when you call them a moron.",
+        "Among other things, you'll find that you're not the first person who was ever confused and frightened and even sickened by human behavior.",
+        "People never notice anything.",
+        "Don't ever tell anybody anything. If you do, you start missing everybody."
+      ],
+      "author": "J.D. Salinger",
+      "image": "https://images.pexels.com/photos/698324/pexels-photo-698324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": "Coming-of-age Fiction"
+    },
+    {
+      "id": 6,
+      "bookName": "The Lord of the Rings",
+      "quotes": [
+        "All we have to decide is what to do with the time that is given us.",
+        "Not all those who wander are lost.",
+        "Even the smallest person can change the course of the future.",
+        "The world is indeed full of peril, and in it, there are many dark places; but still, there is much that is fair, and though in all lands love is now mingled with grief, it grows perhaps the greater.",
+        "I wish it need not have happened in my time, said Frodo. So do I,said Gandalf, and so do all who live to see such times. But that is not for them to decide. All we have to decide is what to do with the time that is given us."
+      ],
+      "author": "J.R.R. Tolkien",
+      "image": "https://images.pexels.com/photos/2062433/pexels-photo-2062433.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": "Fantasy"
+    },
+    {
+      "id": 7,
+      "bookName": "Harry Potter and the Philosopher's Stone",
+      "quotes": [
+        "It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends.",
+        "It does not do to dwell on dreams and forget to live.",
+        "To the well-organized mind, death is but the next great adventure.",
+        "It does not do to dwell on dreams and forget to live, remember that.",
+        "After all this time? Always."
+      ],
+      "author": "J.K. Rowling",
+      "image": "https://images.pexels.com/photos/2740956/pexels-photo-2740956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": "Fantasy"
+    },
+    {
+      "id": 8,
+      "bookName": "Moby-Dick",
+      "quotes": [
+        "Call me Ishmael.",
+        "Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people’s hats off—then, I account it high time to get to sea as soon as I can.",
+        "I know not all that may be coming, but be it what it will, I’ll go to it laughing.",
+        "I try all things, I achieve what I can.",
+        "There is no folly of the beast of the earth which is not infinitely outdone by the madness of men."
+      ],
+      "author": "Herman Melville",
+      "image": "https://images.pexels.com/photos/2228548/pexels-photo-2228548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": "Adventure Fiction"
+    },
+    {
+        "id": 9,
+        "bookName": "The Hobbit",
+        "quotes": [
+          "In a hole in the ground there lived a hobbit.",
+          "There is nothing like looking, if you want to find something.",
+          "There is more in you of good than you know, child of the kindly West. Some courage and some wisdom, blended in measure. If more of us valued food and cheer and song above hoarded gold, it would be a merrier world.",
+          "There is a lot more in him than you guess, and a deal more than he has any idea of himself.",
+          "The world was not beautiful, therefore it was."
+        ],
+        "author": "J.R.R. Tolkien",
+        "image": "https://images.pexels.com/photos/3309775/pexels-photo-3309775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "category": "Fantasy"
+      },
+      {
+        "id": 10,
+        "bookName": "The Hobbit",
+        "quotes": [
+          "In a hole in the ground there lived a hobbit.",
+          "There is nothing like looking, if you want to find something.",
+          "There is more in you of good than you know, child of the kindly West. Some courage and some wisdom, blended in measure. If more of us valued food and cheer and song above hoarded gold, it would be a merrier world.",
+          "There is a lot more in him than you guess, and a deal more than he has any idea of himself.",
+          "The world was not beautiful, therefore it was."
+        ],
+        "author": "J.R.R. Tolkien",
+        "image": "https://images.pexels.com/photos/2228554/pexels-photo-2228554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "category": "Fantasy"
+      }
+    ]

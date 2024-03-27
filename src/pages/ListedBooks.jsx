@@ -53,7 +53,7 @@ const ListedBooks = () => {
       </div>
 
       {/* tab slider */}
-      <div role="tablist" className="tabs w-1/3  tabs-lifted">
+      <div role="tablist" className="tabs lg:w-1/3  tabs-lifted">
         <Link
           to={""}
           onClick={() => setTabIndex(1)}

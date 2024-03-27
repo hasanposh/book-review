@@ -12,6 +12,7 @@ import ReadBooks from "./components/ReadBooks.jsx";
 import WishListBooks from "./components/WishListBooks.jsx";
 import { Toaster } from "react-hot-toast";
 import SearchTheBook from "./pages/SearchTheBook.jsx";
+import Quotes from "./pages/Quotes.jsx";
 
 const router = createBrowserRouter([
   {
@@ -55,6 +56,11 @@ const router = createBrowserRouter([
         path: "/seacrhthebook",
         element: <SearchTheBook />,
         loader: () => fetch("/books.json"),
+      },
+      {
+        path: "/quotes",
+        element: <Quotes />,
+        loader: () => fetch("/quotes.json"),
       },
     ],
   },

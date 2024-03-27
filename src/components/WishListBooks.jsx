@@ -9,26 +9,20 @@ const WishListBooks = () => {
  
   return (
     <div className="my-8 space-y-8">
+      
       {wishListBooks.map((wishListBook) => (
-        <div
-          key={wishListBook.bookId}
-          className="card lg:card-side border-2 p-6"
-        >
-          <div className="w-1/3">
+        <div key={wishListBook.bookId} className="card lg:card-side border-2 p-6">
+          <div className="lg:w-1/3">
             <figure>
-              <img
-                className="rounded-xl"
-                src={wishListBook.image}
-                alt="image"
-              />
+              <img className="rounded-xl" src={wishListBook.image} alt="image" />
             </figure>
           </div>
-          <div className="pl-10 w-full space-y-3">
+          <div className="lg:pl-10 w-full space-y-3">
             <h2 className="card-title font-bold text-3xl">
               {wishListBook.bookName}
             </h2>
             <p className="font-semibold">By : {wishListBook.author}</p>
-            <div className="flex flex-col gap-3 items-center">
+            <div className="flex flex-col lg:flex-row gap-3 lg:items-center">
               <p className="font-bold">Tag </p>
               <div className="flex gap-3">
                 {wishListBook.tags.map((tag, indx) => (
@@ -40,12 +34,12 @@ const WishListBooks = () => {
                   </p>
                 ))}
               </div>
-              <div className="ml-4 flex items-center gap-3 font-medium">
+              <div className="lg:ml-4 flex items-center gap-3 font-medium">
                 <IoLocationOutline className="text-xl " />
                 <p>Year of Publishing : {wishListBook.yearOfPublishing}</p>
               </div>
             </div>
-            <div className="flex text-lg gap-10">
+            <div className="flex flex-col lg:flex-row text-lg lg:gap-10">
               <div className="flex items-center gap-3">
                 <GoPeople />
                 <p>Publisher : {wishListBook.publisher}</p>
