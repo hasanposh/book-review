@@ -11,6 +11,7 @@ import BookDetails from "./components/BookDetails.jsx";
 import ReadBooks from "./components/ReadBooks.jsx";
 import WishListBooks from "./components/WishListBooks.jsx";
 import { Toaster } from "react-hot-toast";
+import SearchTheBook from "./pages/SearchTheBook.jsx";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,11 @@ const router = createBrowserRouter([
       {
         path: "/bookdetails/:id",
         element: <BookDetails />,
+        loader: () => fetch("/books.json"),
+      },
+      {
+        path: "/seacrhthebook",
+        element: <SearchTheBook />,
         loader: () => fetch("/books.json"),
       },
     ],

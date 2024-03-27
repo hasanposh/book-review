@@ -23,6 +23,11 @@ const NavBar = () => {
             isActive ?  "border-2 bg-transparent text-[#23BE0A] border-[#23BE0A]"  : ""
           } to="/pagestoread">Pages to Read </NavLink>
       </li> 
+      <li>
+        <NavLink  className={({ isActive }) =>
+            isActive ?  "border-2 bg-transparent text-[#23BE0A] border-[#23BE0A]"  : ""
+          } to="/seacrhthebook">Search Your Book </NavLink>
+      </li> 
     </>
   );
 
