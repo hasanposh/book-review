@@ -11,3 +11,5 @@ Features and characteristics of this website.
 - This project give some books information as like auhtor name,image ,pages and rating of the book.
 - Here you can list your book which your read already and wishlist which you want to read in future.
 - You can compare the pages of the book which you read already.
+- You can also search books from search your book page.
+- Quotes page gives you some quotes from a individual books.And also you can get information of the books also.
