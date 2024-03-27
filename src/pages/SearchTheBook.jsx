@@ -17,9 +17,7 @@ const SearchTheBook = () => {
     const books = data.filter((book) =>
       book.bookName.toLowerCase().includes(searchName.toLowerCase())
     );
-    // console.log(books);
-    // console.log(searchName);
-    // console.log(book);
+   
     if (books) {
       setBooks(books);
     }

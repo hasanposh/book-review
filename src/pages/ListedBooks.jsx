@@ -22,8 +22,8 @@ const ListedBooks = () => {
     //   (a, b) => parseFloat(b[property]) - parseFloat(a[property])
     // );
     // setReadBooks(sortedStoredBooks);
-    setReadBooks(prevState=>[...prevState].sort((a,b)=>a[property]-b[property]))
-    setWishListBooks(prevState=>[...prevState].sort((a,b)=>a[property]-b[property]))
+    setReadBooks(prevState=>[...prevState].sort((a,b)=>b[property]-a[property]))
+    setWishListBooks(prevState=>[...prevState].sort((a,b)=>b[property]-a[property]))
 
   };
 
