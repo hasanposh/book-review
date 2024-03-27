@@ -1,18 +1,20 @@
-import { useEffect, useState } from "react";
-import { getReadBooks } from "../utility/localStorage";
+
 import { IoLocationOutline } from "react-icons/io5";
 import { GoPeople } from "react-icons/go";
 import { BiBookBookmark } from "react-icons/bi";
-import { Link } from "react-router-dom";
+import { Link,useOutletContext } from "react-router-dom";
 
 
 const ReadBooks = () => {
+  const [readBooks] = useOutletContext()
+  // console.log(('2'),readBooks)
+
   // console.log(handleSortedBooksByRating);
-  const [readBooks, setReadBooks] = useState([]);
-  useEffect(() => {
-    const storedBooks = getReadBooks();
-    setReadBooks(storedBooks);
-  }, []);
+  // const [readBooks, setReadBooks] = useState([]);
+  // useEffect(() => {
+  //   const storedBooks = getReadBooks();
+  //   setReadBooks(storedBooks);
+  // }, []);
   
 
   return (

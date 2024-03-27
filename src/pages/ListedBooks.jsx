@@ -1,17 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 import { getReadBooks } from "../utility/localStorage";
 
+
 const ListedBooks = () => {
   const [tabIndex, setTabIndex] = useState(1);
-  
+  const [readBooks, setReadBooks] = useState([]);
+  useEffect(() => {
+    const storedBooks = getReadBooks();
+    setReadBooks(storedBooks);
+  }, [])
   const handleSortedBooksByRating = () => {
     const storedReadBooks = getReadBooks();
-    const ratingOfBooks = storedReadBooks.map(book=> book.rating) 
-    const sortedByRating =ratingOfBooks.sort(function(a, b){return a - b});
-    const sortedByRatingBooks = storedReadBooks.filter(obj => sortedByRating.includes(obj.rating))
-    // setReadBooks(sortedByRatingBooks);
+    const sortedStoredBooks=storedReadBooks.sort((a,b)=>parseFloat(a.rating)-parseFloat(b.rating))
+    setReadBooks(sortedStoredBooks)
+    // setReadBooks(prevState=>[...prevState].sort((a,b)=>a.rating-b.rating))
   };
   return (
     <div>
@@ -26,7 +30,7 @@ const ListedBooks = () => {
           </summary>
           <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
             <li>
-              <a onClick={handleSortedBooksByRating}>Rating</a>
+              <span onClick={handleSortedBooksByRating}>Rating</span>
             </li>
             <li>
               <a>Number Of Pages</a>
@@ -57,7 +61,7 @@ const ListedBooks = () => {
           Wishlist Books
         </Link>
       </div>
-      <Outlet handleSortedBooksByRating={handleSortedBooksByRating} />
+      <Outlet context={[readBooks]}  />
     </div>
   );
 };

@@ -31,7 +31,7 @@ const router = createBrowserRouter([
           {
             index: true,
             // path: "readbooks/",
-            element: <ReadBooks />,
+            element: <ReadBooks  />,
             loader: () => fetch("../public/books.json"),
           },
           {
