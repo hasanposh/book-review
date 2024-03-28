@@ -3,7 +3,7 @@ import bannerBook from "../assets/book.jpeg";
 
 const HomeBanner = () => {
   return (
-    <div className="bg-[#f3f3f3] p-10 lg:h-[600px] rounded-xl flex items-center justify-around">
+    <div className="bg-[#f3f3f3] m-4 p-10 lg:h-[600px] rounded-xl flex items-center justify-around">
       <div className="flex flex-col justify-center gap-10">
         <h2 className="text-4xl lg:text-6xl font-bold">
           Books to freshen

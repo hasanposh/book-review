@@ -14,7 +14,7 @@ const ListedBooks = () => {
     setReadBooks(storedReadBooks);
     setWishListBooks(storedWishListBooks);
   }, []);
-  
+
   const handleSortedBooks = (property) => {
     // const storedReadBooks = getReadBooks();
     // const storedWishListBooks = getWishListBooks();
@@ -22,9 +22,12 @@ const ListedBooks = () => {
     //   (a, b) => parseFloat(b[property]) - parseFloat(a[property])
     // );
     // setReadBooks(sortedStoredBooks);
-    setReadBooks(prevState=>[...prevState].sort((a,b)=>b[property]-a[property]))
-    setWishListBooks(prevState=>[...prevState].sort((a,b)=>b[property]-a[property]))
-
+    setReadBooks((prevState) =>
+      [...prevState].sort((a, b) => b[property] - a[property])
+    );
+    setWishListBooks((prevState) =>
+      [...prevState].sort((a, b) => b[property] - a[property])
+    );
   };
 
   return (
@@ -40,13 +43,17 @@ const ListedBooks = () => {
           </summary>
           <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
             <li>
-              <span onClick={()=>handleSortedBooks('rating')}>Rating</span>
+              <span onClick={() => handleSortedBooks("rating")}>Rating</span>
             </li>
             <li>
-              <span onClick={()=>handleSortedBooks('totalPages')}>Number Of Pages</span>
+              <span onClick={() => handleSortedBooks("totalPages")}>
+                Number Of Pages
+              </span>
             </li>
             <li>
-              <span onClick={()=>handleSortedBooks('yearOfPublishing')}>Publisher year</span>
+              <span onClick={() => handleSortedBooks("yearOfPublishing")}>
+                Publisher year
+              </span>
             </li>
           </ul>
         </details>
@@ -71,7 +78,9 @@ const ListedBooks = () => {
           Wishlist Books
         </Link>
       </div>
-      <Outlet context={[readBooks, wishListBooks]} />
+      <div className="m-4 lg:m-0">
+        <Outlet context={[readBooks, wishListBooks]} />
+      </div>
     </div>
   );
 };

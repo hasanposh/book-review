@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const SearchedBook = ({ books }) => {
   // const { bookName ,image,author,rating,category ,bookId,tags} = book;
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 my-10">
+    <div className="grid p-4 lg:p-0 grid-cols-1 lg:grid-cols-3 gap-10 my-10">
       
       {books.map((book) => (
         <>

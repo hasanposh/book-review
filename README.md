@@ -2,7 +2,7 @@
 
 
 Live site:
-- [Book Vibe](https://book-review-with-react.netlify.app/)
+- [Book Vibe](https://66054932388f5a0d35b327d4--book-review-with-react.netlify.app/)
 
 
 Features and characteristics of this website.

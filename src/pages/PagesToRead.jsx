@@ -45,6 +45,7 @@ const PagestoRead = () => {
           <XAxis dataKey="bookName" />
           <YAxis />
           <Bar
+          
             dataKey="totalPages"
             fill="#8884d8"
             shape={<TriangleBar />}

@@ -39,13 +39,13 @@ const BookDetails = () => {
   };
 
   return (
-    <div className="card lg:card-side ">
+    <div className="card lg:card-side p-4 my-10">
       <div className="lg:w-1/2">
         <figure>
           <img src={image} className="rounded-xl" alt="Album" />
         </figure>
       </div>
-      <div className=" pl-10 space-y-3">
+      <div className=" lg:pl-10 space-y-3">
         <h2 className="card-title text-5xl font-bold">{bookName}</h2>
         <p className="font-medium text-xl">By : {author}</p>
         <hr />

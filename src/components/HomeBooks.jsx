@@ -3,7 +3,7 @@ import HomeBook from "./HomeBook";
 
 const HomeBooks = ({ data }) => {
   return (
-    <div className="grid gap-10 grid-cols-1 lg:grid-cols-3">
+    <div className="grid p-4 lg:p-0 gap-10 grid-cols-1 lg:grid-cols-3">
       {data.map((book) => (
         <HomeBook key={book.bookId} book={book} />
       ))}

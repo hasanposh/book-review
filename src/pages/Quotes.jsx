@@ -3,10 +3,11 @@ import { useLoaderData } from "react-router-dom";
 const Quotes = () => {
   const data = useLoaderData();
   return (
-    <div className="space-y-10">
-      <div className=" bg-[#f3f3f3] flex items-center justify-center rounded-xl h-24">
+    <div>
+      <div className=" bg-[#f3f3f3] flex items-center mb-10 text-center justify-center rounded-xl h-24">
         <p className="text-3xl font-bold">Find Your Favourite Quote From A Book</p>
       </div>
+      <div className="space-y-10 p-4 lg:p-0">
       {data.map((qoute ) => (
         <>
           <div key={qoute.id} className="card lg:card-side bg-base-100 shadow-xl">
@@ -32,6 +33,7 @@ const Quotes = () => {
           </div>
         </>
       ))}
+    </div>
     </div>
   );
 };
