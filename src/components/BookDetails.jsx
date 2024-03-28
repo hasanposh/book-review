@@ -40,7 +40,7 @@ const BookDetails = () => {
 
   return (
     <div className="card lg:card-side ">
-      <div className="w-1/2">
+      <div className="lg:w-1/2">
         <figure>
           <img src={image} className="rounded-xl" alt="Album" />
         </figure>
