@@ -13,7 +13,7 @@ const colors = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "red", "pink"];
 
 const PagestoRead = () => {
   const data = getReadBooks();
-  console.log(data);
+  // console.log(data);
   const getPath = (x, y, width, height) => {
     return `M${x},${y + height}C${x + width / 3},${y + height} ${
       x + width / 2

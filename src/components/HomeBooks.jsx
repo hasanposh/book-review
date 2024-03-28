@@ -12,7 +12,7 @@ const HomeBooks = ({ data }) => {
 };
 
 HomeBooks.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.array,
 };
 
 export default HomeBooks;

@@ -13,11 +13,11 @@ export const saveWishListBook = book => {
     let books = getWishListBooks()
     const isExist = books.find(b => b.bookId === book.bookId)
     if (isExist) {
-        return toast.error("Already Add This Book")
+        return toast.error("You Already Add This Book")
     }
     books.push(book)
     localStorage.setItem('wishBooks', JSON.stringify(books))
-    toast.success('Book Listed Successfully')
+    toast.success('Successfully Add in WishList Books')
 }
 
 export const deleteWishListBook = book => {

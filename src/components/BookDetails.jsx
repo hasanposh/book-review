@@ -30,7 +30,7 @@ const BookDetails = () => {
     const storedReadBooks = getReadBooks();
 
     if (storedReadBooks.find((b) => b.bookId === book.bookId)) {
-      return toast.error("Already Read This Book")
+      return toast.error("You Already Read This Book")
     }
     else{
 

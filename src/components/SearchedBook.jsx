@@ -50,7 +50,7 @@ const SearchedBook = ({ books }) => {
 };
 
 SearchedBook.propTypes = {
-  books: PropTypes.object,
+  books: PropTypes.array,
 };
 
 export default SearchedBook;

@@ -4,9 +4,12 @@ const Quotes = () => {
   const data = useLoaderData();
   return (
     <div className="space-y-10">
-      {data.map((qoute) => (
+      <div className=" bg-[#f3f3f3] flex items-center justify-center rounded-xl h-24">
+        <p className="text-3xl font-bold">Find Your Favourite Quote From A Book</p>
+      </div>
+      {data.map((qoute ) => (
         <>
-          <div className="card lg:card-side bg-base-100 shadow-xl">
+          <div key={qoute.id} className="card lg:card-side bg-base-100 shadow-xl">
             <figure className="lg:w-1/2 ">
               <img src={qoute.image} alt="Album" />
             </figure>
